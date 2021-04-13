@@ -1,0 +1,11 @@
+version: "3.3"
+services:
+    web:
+        build:
+            context: ./app/web
+        volumes:
+            - ./app/web/src:/var/www/html
+        ports:
+            - "8000:80"
+ 
+  
